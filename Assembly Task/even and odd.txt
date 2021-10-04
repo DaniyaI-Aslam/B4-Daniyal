@@ -1,0 +1,15 @@
+li t0 7 # number
+li t6 7
+li t1 4 #divisior
+loop:
+blt t6 t1 end
+sub t6 t6 t1
+j loop
+end:
+# mv s0 t6
+li a2 2 #2
+li a3 3 #3
+rem a1 t0 a2
+beq a1 x0 ennd
+rem a2 t0 a3 
+beq a2 x0 ennnd
